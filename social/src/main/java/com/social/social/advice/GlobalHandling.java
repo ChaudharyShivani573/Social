@@ -12,7 +12,6 @@ public class GlobalHandling {
 
     @ExceptionHandler(EmptyInputException.class)
     public ResponseEntity<String> emptyInputException (EmptyInputException emptyInputException){
-
         return new ResponseEntity<>("Inputs should not be empty", HttpStatus.BAD_REQUEST);
     }
 
